@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     initImageFallbackComponent();
+    initImageModal();
     initHeroDiagramAnimation();
     initAirPurifierTwin();
     initFuelGuardTwin();
@@ -302,4 +303,91 @@ function initGreenBoreTwin() {
     }
 
     updateDisplay();
+}
+
+/* --- LIGHTBOX FULLSCREEN IMAGE MODAL --- */
+function initImageModal() {
+    let overlay = document.querySelector('.image-modal-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'image-modal-overlay';
+        overlay.innerHTML = `
+            <div class="image-modal-container">
+                <button class="image-modal-close" aria-label="Close image modal">&times;</button>
+                <img class="image-modal-img" src="" alt="Enlarged view">
+                <div class="image-modal-placeholder-box" style="display: none;">
+                    <div class="placeholder-icon" style="width: 54px; height: 54px; margin-bottom: 1rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                            <polyline points="21 15 16 10 5 21"></polyline>
+                        </svg>
+                    </div>
+                    <div class="modal-ph-title" style="font-family: var(--font-mono); font-size: 1.1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.5rem; text-transform: uppercase;"></div>
+                    <div class="modal-ph-path" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-teal-dark); background-color: var(--accent-teal-light); padding: 0.3rem 0.8rem; border-radius: var(--radius-sm); border: 1px solid var(--accent-teal-border); margin-bottom: 1rem;"></div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary); max-width: 480px; line-height: 1.5;">Drop your photograph file into the assets folder to display your high-resolution image here.</div>
+                </div>
+                <div class="image-modal-caption"></div>
+            </div>
+        `;
+        document.body.appendChild(overlay);
+    }
+
+    const modalImg = overlay.querySelector('.image-modal-img');
+    const placeholderBox = overlay.querySelector('.image-modal-placeholder-box');
+    const modalPhTitle = overlay.querySelector('.modal-ph-title');
+    const modalPhPath = overlay.querySelector('.modal-ph-path');
+    const modalCaption = overlay.querySelector('.image-modal-caption');
+    const closeBtn = overlay.querySelector('.image-modal-close');
+
+    function closeModal() {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && overlay.classList.contains('open')) {
+            closeModal();
+        }
+    });
+
+    const containers = document.querySelectorAll('.image-placeholder-container');
+    containers.forEach(container => {
+        container.style.cursor = 'pointer';
+        container.title = 'Click to open full ratio view';
+
+        container.addEventListener('click', () => {
+            const img = container.querySelector('img');
+            const caption = container.querySelector('.placeholder-caption');
+            const fallbackTitle = container.querySelector('.placeholder-title');
+            const fallbackPath = container.querySelector('.placeholder-path');
+
+            if (img && img.style.display !== 'none' && img.complete && img.naturalWidth > 0) {
+                modalImg.src = img.src;
+                modalImg.alt = img.alt || 'Full size view';
+                modalImg.style.display = 'block';
+                placeholderBox.style.display = 'none';
+            } else {
+                modalImg.style.display = 'none';
+                placeholderBox.style.display = 'flex';
+                modalPhTitle.textContent = fallbackTitle ? fallbackTitle.textContent : 'IMAGE PLACEHOLDER';
+                modalPhPath.textContent = fallbackPath ? fallbackPath.textContent : '';
+            }
+
+            if (caption) {
+                modalCaption.textContent = caption.textContent;
+                modalCaption.style.display = 'block';
+            } else {
+                modalCaption.style.display = 'none';
+            }
+
+            overlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        });
+    });
 }
