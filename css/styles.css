@@ -648,7 +648,8 @@ a {
 .image-placeholder-container {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 9;
+    min-height: 280px;
     background-color: var(--bg-main);
     border: 1px solid var(--border-light);
     border-radius: var(--radius-md);
@@ -1120,14 +1121,18 @@ a {
 
 .gallery-grid-3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.gallery-grid-3 > :nth-child(3) {
+    grid-column: 1 / -1;
 }
 
 .gallery-grid-4 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 
 /* DIGITAL TWIN INTERACTIVE WIDGET */
@@ -1286,6 +1291,10 @@ a {
     .gallery-grid-3,
     .gallery-grid-4 {
         grid-template-columns: 1fr;
+    }
+
+    .gallery-grid-3 > :nth-child(3) {
+        grid-column: span 1;
     }
 
     .other-builds-grid {
