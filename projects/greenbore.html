@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBore AI Subsurface Exploration Platform — Zayyan Shaikh Portfolio</title>
+    <meta name="description"
+        content="GreenBore AI is a full-stack AI engineering platform and 3D subsurface digital twin for analyzing deep well-log data and generating explainable drilling recommendations.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- STICKY NAVIGATION -->
+    <nav class="site-nav" id="navbar">
+        <div class="container nav-inner">
+            <a href="../index.html" class="nav-brand">
+                <span>ZAYYAN</span><span class="brand-slash">/</span><span>SHAIKH</span>
+                <span class="brand-badge">ECE '26</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="../index.html#capabilities" class="nav-link">CAPABILITIES</a></li>
+                <li><a href="../index.html#other-builds" class="nav-link">OTHER BUILDS</a></li>
+                <li><a href="../index.html#about" class="nav-link">ABOUT</a></li>
+                <li><a href="../index.html#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="../index.html#projects">PROJECTS</a></li>
+            <li><a href="../index.html#capabilities">CAPABILITIES</a></li>
+            <li><a href="../index.html#other-builds">OTHER BUILDS</a></li>
+            <li><a href="../index.html#about">ABOUT</a></li>
+            <li><a href="../index.html#contact">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <!-- PROJECT HERO -->
+    <header class="project-hero">
+        <div class="container">
+            <div class="project-hero-breadcrumbs">
+                <a href="../index.html">HOME</a>
+                <span>/</span>
+                <a href="../index.html#projects">PROJECTS</a>
+                <span>/</span>
+                <span style="color: var(--text-primary);">GREENBORE AI</span>
+            </div>
+
+            <h1 class="project-page-title">GREENBORE AI <span style="font-size: large;"> (only Digital Twin)</span></h1>
+            <p class="project-page-subtitle">
+                Subsurface Exploration & Groundwater Decision Support Platform combining interactive 3D WebGL digital
+                twins, multi-track petrophysical telemetry, machine learning, and retrieval-augmented generation (RAG).
+            </p>
+
+            <div class="project-spec-strip">
+                <div class="spec-item">
+                    <span class="spec-label">3D TWIN ENGINE</span>
+                    <span class="spec-value">React Three Fiber / Three.js</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">BACKEND API</span>
+                    <span class="spec-value">FastAPI & Python</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">DATABASE / VECTOR</span>
+                    <span class="spec-value">PostgreSQL & pgvector</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">ML CLASSIFIERS</span>
+                    <span class="spec-value">RandomForest & XGBoost</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">RAG CO-PILOT</span>
+                    <span class="spec-value">Google Gemini API</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">DESTRUCTIVE / INFRA</span>
+                    <span class="spec-value">Docker & GitHub Actions</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- PROJECT IMAGE GALLERY (EXACTLY 3 SLOTS) -->
+    <section class="project-gallery-section">
+        <div class="container">
+            <span class="section-num">IMAGE GALLERY // EXACTLY 3 SLOTS</span>
+            <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1.5rem; text-transform: uppercase;">Platform
+                Visuals</h2>
+
+            <div class="gallery-grid-3">
+
+                <!-- SLOT 1: 3D Subsurface Visualization -->
+                <div class="image-placeholder-container">
+                    <span class="placeholder-badge">SLOT 01 // 3D TWIN</span>
+                    <img src="../assets/images/greenbore-hardware.jpg" alt="GreenBore AI 3D Subsurface Digital Twin"
+                        loading="lazy">
+                    <div class="placeholder-fallback">
+                        <div class="placeholder-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <div class="placeholder-title">3D SUBSURFACE DIGITAL TWIN</div>
+                        <div class="placeholder-path">assets/images/greenbore-hardware.jpg</div>
+                    </div>
+                    <div class="placeholder-caption">FIG 1: Interactive 3D WebGL Strata & Wellbore Digital Twin
+                        Inspector</div>
+                </div>
+
+                <!-- SLOT 2: Multi-Track Petrophysical Log Viewer -->
+                <div class="image-placeholder-container">
+                    <span class="placeholder-badge">SLOT 02 // LOG TELEMETRY</span>
+                    <img src="../assets/images/greenbore-mechanism.jpg" alt="Multi-Track Petrophysical Log Viewer"
+                        loading="lazy">
+                    <div class="placeholder-fallback">
+                        <div class="placeholder-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <div class="placeholder-title">MULTI-TRACK LOG VIEWER</div>
+                        <div class="placeholder-path">assets/images/greenbore-mechanism.jpg</div>
+                    </div>
+                    <div class="placeholder-caption">FIG 2: Real-Time Cross-Linked Gamma-Ray, Resistivity & Porosity Log
+                        Tracks</div>
+                </div>
+
+                <!-- SLOT 3: RAG Decision Co-pilot & ML Catalog -->
+                <div class="image-placeholder-container">
+                    <span class="placeholder-badge">SLOT 03 // RAG CO-PILOT</span>
+                    <img src="../assets/images/greenbore-field.jpg" alt="RAG Decision Co-pilot & ML Model Catalog"
+                        loading="lazy">
+                    <div class="placeholder-fallback">
+                        <div class="placeholder-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <div class="placeholder-title">RAG DECISION CO-PILOT</div>
+                        <div class="placeholder-path">assets/images/greenbore-field.jpg</div>
+                    </div>
+                    <div class="placeholder-caption">FIG 3: RAG Geological Co-Pilot Interface & ML Model Performance
+                        Catalog</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="container" style="padding-top: 3rem; padding-bottom: 5rem;">
+
+        <!-- SYSTEM ARCHITECTURE DIAGRAM -->
+        <section class="tech-diagram-container">
+            <div class="tech-diagram-title">GREENBORE AI FULL-STACK DIGITAL TWIN PIPELINE</div>
+
+            <div class="signal-diagram"
+                style="background-color: var(--bg-main); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+                <div
+                    style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+                    <div style="text-align: center; flex: 1;">
+                        <div class="mono-tag" style="color: var(--accent-teal-dark);">GEOLOGICAL ENGINE</div>
+                        <div style="font-weight: 700; font-size: 0.85rem; font-family: var(--font-mono);">Synthetic
+                            Strata & Noise Simulation</div>
+                    </div>
+                    <div style="color: var(--text-muted); font-family: var(--font-mono);">→</div>
+                    <div style="text-align: center; flex: 1;">
+                        <div class="mono-tag" style="color: var(--accent-teal-dark);">FASTAPI BACKEND</div>
+                        <div style="font-weight: 700; font-size: 0.85rem; font-family: var(--font-mono);">Log Parsers &
+                            ML Ingestion</div>
+                    </div>
+                    <div style="color: var(--text-muted); font-family: var(--font-mono);">→</div>
+                    <div style="text-align: center; flex: 1;">
+                        <div class="mono-tag" style="color: var(--accent-teal-dark);">RAG VECTOR STORE</div>
+                        <div style="font-weight: 700; font-size: 0.85rem; font-family: var(--font-mono);">PostgreSQL
+                            pgvector + Gemini</div>
+                    </div>
+                    <div style="color: var(--text-muted); font-family: var(--font-mono);">→</div>
+                    <div style="text-align: center; flex: 1;">
+                        <div class="mono-tag" style="color: var(--accent-teal-dark);">3D DIGITAL TWIN</div>
+                        <div style="font-weight: 700; font-size: 0.85rem; font-family: var(--font-mono);">React Three
+                            Fiber Subsurface View</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DETAILED SECTIONS -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; margin-top: 3rem;">
+
+            <div>
+                <section style="margin-bottom: 3rem;">
+                    <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; text-transform: uppercase;">
+                        Overview & Platform Objective</h2>
+                    <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+                        GreenBore AI is a full-stack AI engineering platform built for analyzing deep well-log data and
+                        generating explainable drilling recommendations. It combines geological simulation, machine
+                        learning, and retrieval-augmented generation into a single decision-support tool.
+                    </p>
+                </section>
+
+                <section style="margin-bottom: 3rem;">
+                    <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; text-transform: uppercase;">
+                        Core Engineering Features</h2>
+
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+
+                        <div
+                            style="background-color: var(--bg-card); border: 1px solid var(--border-light); padding: 1.5rem; border-radius: var(--radius-md);">
+                            <h3
+                                style="font-size: 1rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: 0.5rem; color: var(--accent-teal-dark);">
+                                01 // INTERACTIVE 3D SUBSURFACE VISUALIZATION</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                                Built with React Three Fiber and Three.js. Renders rock strata, wellbore trajectories,
+                                fractures, and aquifers with an exploded-view inspector, plane slicers, and toggleable
+                                geological layers.
+                            </p>
+                        </div>
+
+                        <div
+                            style="background-color: var(--bg-card); border: 1px solid var(--border-light); padding: 1.5rem; border-radius: var(--radius-md);">
+                            <h3
+                                style="font-size: 1rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: 0.5rem; color: var(--accent-teal-dark);">
+                                02 // MULTI-TRACK PETROPHYSICAL LOG VIEWER</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                                High-performance SVG-based charts displaying gamma-ray, resistivity, porosity, density,
+                                and sonic telemetry. Cross-linked in real-time to the 3D model viewport to inspect
+                                subsurface anomalies instantly.
+                            </p>
+                        </div>
+
+                        <div
+                            style="background-color: var(--bg-card); border: 1px solid var(--border-light); padding: 1.5rem; border-radius: var(--radius-md);">
+                            <h3
+                                style="font-size: 1rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: 0.5rem; color: var(--accent-teal-dark);">
+                                03 // GEOLOGICAL SIMULATION ENGINE</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                                Generates realistic synthetic strata, fracture networks, and aquifer data with
+                                configurable sensor noise and automated feature engineering (moving averages,
+                                porosity-resistivity ratios). Data can be exported seamlessly as CSV, JSON, or Apache
+                                Parquet.
+                            </p>
+                        </div>
+
+                        <div
+                            style="background-color: var(--bg-card); border: 1px solid var(--border-light); padding: 1.5rem; border-radius: var(--radius-md);">
+                            <h3
+                                style="font-size: 1rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: 0.5rem; color: var(--accent-teal-dark);">
+                                04 // ML MODEL CATALOG & PROMOTION SYSTEM</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                                Trains and registers RandomForest and XGBoost classifiers for formation lithology and
+                                groundwater potential prediction. Tracks hyperparameter history, feature importances,
+                                and evaluation metrics with a promotion workflow for production models.
+                            </p>
+                        </div>
+
+                        <div
+                            style="background-color: var(--bg-card); border: 1px solid var(--border-light); padding: 1.5rem; border-radius: var(--radius-md);">
+                            <h3
+                                style="font-size: 1rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: 0.5rem; color: var(--accent-teal-dark);">
+                                05 // RAG DECISION CO-PILOT</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                                An intelligent assistant backed by a self-healing PostgreSQL vector database (pgvector)
+                                containing domain geological literature. Uses Google Gemini API for synthesis with a
+                                deterministic local fallback when offline.
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <!-- SIDEBAR SPECIFICATIONS -->
+            <div>
+                <div
+                    style="background-color: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 1.5rem; position: sticky; top: 90px;">
+                    <h3
+                        style="font-size: 1rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: 1rem; text-transform: uppercase; border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem;">
+                        TECH STACK</h3>
+
+                    <div class="project-tags" style="margin-bottom: 1.5rem;">
+                        <span class="tech-badge">REACT</span>
+                        <span class="tech-badge">VITE</span>
+                        <span class="tech-badge">THREE.JS</span>
+                        <span class="tech-badge">FASTAPI</span>
+                        <span class="tech-badge">POSTGRESQL</span>
+                        <span class="tech-badge">PGVECTOR</span>
+                        <span class="tech-badge">SCIKIT-LEARN</span>
+                        <span class="tech-badge">XGBOOST</span>
+                        <span class="tech-badge">DOCKER</span>
+                    </div>
+
+                    <a href="../index.html#projects" class="btn btn-secondary" style="width: 100%;">← BACK TO
+                        PROJECTS</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                ZAYYAN SHAIKH <span>• Embedded Systems • Electronics • Digital Twins</span>
+            </div>
+            <div class="footer-copy">
+                © 2026 Zayyan Shaikh. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
