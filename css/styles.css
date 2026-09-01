@@ -1135,6 +1135,23 @@ a {
     gap: 2rem;
 }
 
+.gallery-grid-5 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
+
+.gallery-grid-5 > :nth-child(1),
+.gallery-grid-5 > :nth-child(2) {
+    grid-column: span 3;
+}
+
+.gallery-grid-5 > :nth-child(3),
+.gallery-grid-5 > :nth-child(4),
+.gallery-grid-5 > :nth-child(5) {
+    grid-column: span 2;
+}
+
 /* DIGITAL TWIN INTERACTIVE WIDGET */
 .digital-twin-box {
     background-color: #11141A;
@@ -1289,12 +1306,14 @@ a {
     }
 
     .gallery-grid-3,
-    .gallery-grid-4 {
+    .gallery-grid-4,
+    .gallery-grid-5 {
         grid-template-columns: 1fr;
     }
 
-    .gallery-grid-3 > :nth-child(3) {
-        grid-column: span 1;
+    .gallery-grid-3 > :nth-child(3),
+    .gallery-grid-5 > * {
+        grid-column: span 1 !important;
     }
 
     .other-builds-grid {
