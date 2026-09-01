@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Purifier & Digital Twin — Zayyan Shaikh Hardware Portfolio</title>
+    <meta name="description"
+        content="An ESP32-based modular air purification system that monitors air quality and controls filtration and ionization with an embedded live web digital twin.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- STICKY NAVIGATION -->
+    <nav class="site-nav" id="navbar">
+        <div class="container nav-inner">
+            <a href="../index.html" class="nav-brand">
+                <span>ZAYYAN</span><span class="brand-slash">/</span><span>SHAIKH</span>
+                <span class="brand-badge">ECE '26</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="../index.html#capabilities" class="nav-link">CAPABILITIES</a></li>
+                <li><a href="../index.html#other-builds" class="nav-link">OTHER BUILDS</a></li>
+                <li><a href="../index.html#about" class="nav-link">ABOUT</a></li>
+                <li><a href="../index.html#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="../index.html#projects">PROJECTS</a></li>
+            <li><a href="../index.html#capabilities">CAPABILITIES</a></li>
+            <li><a href="../index.html#other-builds">OTHER BUILDS</a></li>
+            <li><a href="../index.html#about">ABOUT</a></li>
+            <li><a href="../index.html#contact">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <!-- PROJECT HERO -->
+    <header class="project-hero">
+        <div class="container">
+            <div class="project-hero-breadcrumbs">
+                <a href="../index.html">HOME</a>
+                <span>/</span>
+                <a href="../index.html#projects">PROJECTS</a>
+                <span>/</span>
+                <span style="color: var(--text-primary);">SMART AIR PURIFIER</span>
+            </div>
+
+            <h1 class="project-page-title">SMART AIR PURIFIER</h1>
+            <p class="project-page-subtitle">
+                An intelligent modular air purification and monitoring system featuring ESP32 control, particulate
+                sensing, high-voltage particle ionization, and an embedded web digital twin.
+            </p>
+
+            <div class="project-spec-strip">
+                <div class="spec-item">
+                    <span class="spec-label">CONTROLLER</span>
+                    <span class="spec-value">ESP32 Dev Module</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">AQI SENSOR</span>
+                    <span class="spec-value">PM2.5 / PM10 Laser</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">CLIMATE SENSOR</span>
+                    <span class="spec-value">DHT22 (Temp & Hum)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">ACTUATORS</span>
+                    <span class="spec-value">Dual 5V Relays</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">IONIZATION</span>
+                    <span class="spec-value">High-Voltage Ionizer</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">DIGITAL TWIN</span>
+                    <span class="spec-value">ESP32 Web Server</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- PROJECT IMAGE GALLERY (EXACTLY 3 SLOTS) -->
+    <section class="project-gallery-section">
+        <div class="container">
+            <span class="section-num">IMAGE GALLERY // EXACTLY 3 SLOTS</span>
+            <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1.5rem; text-transform: uppercase;">System
+                Visuals</h2>
+
+            <div class="gallery-grid-3">
+
+                <!-- SLOT 1: Hardware Prototype -->
+                <div class="image-placeholder-container">
+                    <span class="placeholder-badge">SLOT 01 // HARDWARE</span>
+                    <img src="../assets/images/air-purifier-prototype.jpg" alt="Air Purifier Hardware Prototype"
+                        loading="lazy">
+                    <div class="placeholder-fallback">
+                        <div class="placeholder-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <div class="placeholder-title">HARDWARE PROTOTYPE</div>
+                        <div class="placeholder-path">assets/images/air-purifier-prototype.jpg</div>
+                    </div>
+                    <div class="placeholder-caption">FIG 1: Assembled Desktop Air Purifier Prototype & OLED Display
+                    </div>
+                </div>
+
+                <!-- SLOT 2: Internal Electronics -->
+                <div class="image-placeholder-container">
+                    <span class="placeholder-badge">SLOT 02 // ELECTRONICS</span>
+                    <img src="../assets/images/air-purifier-internals.jpg" alt="Air Purifier Internal Electronics"
+                        loading="lazy">
+                    <div class="placeholder-fallback">
+                        <div class="placeholder-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <div class="placeholder-title">INTERNAL ELECTRONICS</div>
+                        <div class="placeholder-path">assets/images/air-purifier-internals.jpg</div>
+                    </div>
+                    <div class="placeholder-caption">FIG 2: ESP32 Wiring, Dual Relay Module & Ionizer Power Connections
+                    </div>
+                </div>
+
+                <!-- SLOT 3: Digital Twin / Dashboard -->
+                <div class="image-placeholder-container">
+                    <span class="placeholder-badge">SLOT 03 // DASHBOARD</span>
+                    <img src="../assets/images/air-purifier-dashboard.jpg" alt="Air Purifier Digital Twin Dashboard"
+                        loading="lazy">
+                    <div class="placeholder-fallback">
+                        <div class="placeholder-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <div class="placeholder-title">DIGITAL TWIN / DASHBOARD</div>
+                        <div class="placeholder-path">assets/images/air-purifier-dashboard.jpg</div>
+                    </div>
+                    <div class="placeholder-caption">FIG 3: Live ESP32-Hosted Web Dashboard Interface & Telemetry</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="container" style="padding-top: 3rem; padding-bottom: 5rem;">
+
+        <!-- SYSTEM ARCHITECTURE DIAGRAM -->
+        <section class="tech-diagram-container">
+            <div class="tech-diagram-title">HARDWARE ARCHITECTURE & CONTROL FLOW</div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+                <div
+                    style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7;">
+                    <p style="margin-bottom: 1rem;">
+                        <strong>Physical Closed-Loop:</strong><br>
+                        AQI, Temperature, and Humidity sensors continuous polling → ESP32 ADC/UART → Hysteresis
+                        evaluation logic → 2-Channel Relay Switching → Intake Fan & Ionizer Actuation.
+                    </p>
+                    <p>
+                        <strong>Digital Twin Loop:</strong><br>
+                        ESP32 internal WebServer hosts asynchronous WebSocket API → Real-time telemetry broadcast to
+                        browser → Remote manual relay overrides.
+                    </p>
+                </div>
+
+                <div class="signal-diagram"
+                    style="background-color: var(--bg-main); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+                    <div class="diagram-node">
+                        <div class="node-icon">IN</div>
+                        <div class="node-content">
+                            <div class="node-title">Sensors (AQI / Temp / Humidity)</div>
+                        </div>
+                    </div>
+                    <div class="node-connector">
+                        <div class="connector-line">
+                            <div class="connector-pulse"></div>
+                        </div>
+                    </div>
+                    <div class="diagram-node">
+                        <div class="node-icon">MCU</div>
+                        <div class="node-content">
+                            <div class="node-title">ESP32 Core Controller</div>
+                        </div>
+                    </div>
+                    <div class="node-connector">
+                        <div class="connector-line">
+                            <div class="connector-pulse"></div>
+                        </div>
+                    </div>
+                    <div class="diagram-node">
+                        <div class="node-icon">OUT</div>
+                        <div class="node-content">
+                            <div class="node-title">Relays → Fan & Ionizer Plate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DETAILED SECTIONS -->
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; margin-top: 3rem;">
+
+            <div>
+                <section style="margin-bottom: 3rem;">
+                    <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; text-transform: uppercase;">
+                        Overview & System Objective</h2>
+                    <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+                        Indoor particulate pollution (PM2.5 and PM10) presents significant health risks. Standard
+                        purifiers often run continuously at fixed speeds regardless of actual ambient air quality,
+                        consuming excess power and prematurely wearing filter elements.
+                    </p>
+                    <p style="color: var(--text-secondary); line-height: 1.7;">
+                        This system uses an ESP32 microcontroller to continuously monitor air quality index (AQI),
+                        ambient temperature, and relative humidity. Based on user-configured thresholds, the system
+                        automatically triggers dynamic air filtration via an intake fan and activates a high-voltage
+                        electrostatic ionizer.
+                    </p>
+                </section>
+
+                <section style="margin-bottom: 3rem;">
+                    <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; text-transform: uppercase;">
+                        Hardware Implementation</h2>
+                    <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 1.25rem;">
+                        <li><strong>ESP32 Microcontroller:</strong> Central control unit running an embedded C++
+                            firmware with non-blocking timing loops and local web server.</li>
+                        <li><strong>AQI Particulate Sensor:</strong> Laser-based particle sensor measuring PM2.5 and
+                            PM10 concentrations via serial interface.</li>
+                        <li><strong>DHT22 Sensor:</strong> Digital temperature and humidity sensor providing ambient
+                            environment metrics.</li>
+                        <li><strong>2-Channel Relay Module:</strong> Optocoupler-isolated relays for high-voltage
+                            isolation.
+                            <ul>
+                                <li><em>Channel 1:</em> Controls main intake fan power.</li>
+                                <li><em>Channel 2:</em> Controls the high-voltage ionizer power supply.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Ionizer & Aluminum Collector Plate:</strong> Generates negative ions to charge
+                            suspended airborne particles, attracting them to a grounded aluminum collection plate for
+                            silent particulate precipitation.</li>
+                        <li><strong>Exhaust / Auxiliary Fan Mechanism:</strong> Modular mechanical mounting supporting
+                            room-specific exhaust air extraction.</li>
+                    </ul>
+                </section>
+
+                <section style="margin-bottom: 3rem;">
+                    <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; text-transform: uppercase;">
+                        Control Logic & Hysteresis Filtering</h2>
+                    <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+                        To prevent rapid relay chattering near the AQI threshold point (which can damage relay contacts
+                        and mechanical fans), the ESP32 implements a noise-immune <strong>hysteresis control
+                            algorithm</strong>:
+                    </p>
+                    <div
+                        style="background-color: var(--bg-card); border: 1px solid var(--border-light); padding: 1.25rem; border-radius: var(--radius-md); font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 1rem;">
+                        <code>
+                            ON Point &nbsp;= Threshold + Hysteresis (e.g. 50 + 10 = 60 AQI)<br>
+                            OFF Point = Threshold - Hysteresis (e.g. 50 - 10 = 40 AQI)
+                        </code>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.7;">
+                        The relay turns ON only when AQI rises to 60 or above, and stays ON until AQI drops to 40 or
+                        below.
+                    </p>
+                </section>
+            </div>
+
+            <!-- SIDEBAR SPECIFICATIONS -->
+            <div>
+                <div
+                    style="background-color: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 1.5rem; position: sticky; top: 90px;">
+                    <h3
+                        style="font-size: 1rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: 1rem; text-transform: uppercase; border-bottom: 1px solid var(--border-light); padding-bottom: 0.5rem;">
+                        TECHNICAL TAGS</h3>
+
+                    <div class="project-tags" style="margin-bottom: 1.5rem;">
+                        <span class="tech-badge">ESP32</span>
+                        <span class="tech-badge">AQI SENSOR</span>
+                        <span class="tech-badge">DHT22</span>
+                        <span class="tech-badge">DUAL RELAY</span>
+                        <span class="tech-badge">IONIZER</span>
+                        <span class="tech-badge">DIGITAL TWIN</span>
+                    </div>
+
+                    <h3
+                        style="font-size: 1rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: 0.5rem; text-transform: uppercase;">
+                        MODULAR EXTENSIONS</h3>
+                    <p
+                        style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1.5rem;">
+                        Designed to scale across multiple rooms by pairing additional remote ESP32 sensing nodes over
+                        MQTT or ESP-NOW.
+                    </p>
+
+                    <a href="../index.html#projects" class="btn btn-secondary" style="width: 100%;">← BACK TO
+                        PROJECTS</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                ZAYYAN SHAIKH <span>• Embedded Systems • Electronics • Hardware</span>
+            </div>
+            <div class="footer-copy">
+                © 2026 Zayyan Shaikh. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
