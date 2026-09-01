@@ -1124,6 +1124,12 @@ a {
     gap: 1.5rem;
 }
 
+.gallery-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
 /* DIGITAL TWIN INTERACTIVE WIDGET */
 .digital-twin-box {
     background-color: #11141A;
@@ -1277,7 +1283,8 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .gallery-grid-3 {
+    .gallery-grid-3,
+    .gallery-grid-4 {
         grid-template-columns: 1fr;
     }
 
