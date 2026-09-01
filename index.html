@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zayyan Shaikh — Embedded Systems & Electronics Engineering Portfolio</title>
+    <meta name="description" content="Portfolio of Zayyan Shaikh showcasing embedded systems, electronics, IoT, automation, sensing, digital twins, and hardware engineering projects.">
+    <meta name="keywords" content="Zayyan Shaikh, Embedded Systems, Electronics, ESP32, ESP8266, IoT, Sensing, Automation, Digital Twins, GreenBore AI, Hardware Engineering">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- STICKY NAVIGATION -->
+    <nav class="site-nav" id="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-brand">
+                <span>ZAYYAN</span><span class="brand-slash">/</span><span>SHAIKH</span>
+                <span class="brand-badge">ECE '26</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#capabilities" class="nav-link">CAPABILITIES</a></li>
+                <li><a href="#other-builds" class="nav-link">OTHER BUILDS</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#capabilities">CAPABILITIES</a></li>
+            <li><a href="#other-builds">OTHER BUILDS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="pulse-dot"></span>
+                    <span>HARDWARE & EMBEDDED SYSTEMS ENGINEER</span>
+                </div>
+                <h1 class="hero-title">
+                    BUILDING HARDWARE<br>
+                    THAT THINKS, SENSES<br>
+                    AND ACTS.
+                </h1>
+                <p class="hero-subtext">
+                    Electronics & Communication Engineering student building embedded systems, IoT devices, automation systems, sensing platforms, and connected physical prototypes.
+                </p>
+                <div class="hero-quote">
+                    "From sensor readings to physical actuation — I build the complete system."
+                </div>
+                <div class="hero-badges">
+                    <span class="tech-badge">EMBEDDED SYSTEMS</span>
+                    <span class="tech-badge">ELECTRONICS</span>
+                    <span class="tech-badge">IoT</span>
+                    <span class="tech-badge">CONTROL</span>
+                    <span class="tech-badge">DIGITAL TWINS</span>
+                </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">VIEW PROJECTS →</a>
+                    <a href="#about" class="btn btn-secondary">ABOUT ME</a>
+                </div>
+            </div>
+
+            <!-- HERO ANIMATED SIGNAL DIAGRAM -->
+            <div class="hero-visual-card">
+                <div class="hero-visual-header">
+                    <span class="visual-header-title">SYSTEM DATA & CONTROL FLOW</span>
+                    <div class="visual-status">
+                        <span class="status-dot"></span>
+                        <span>LIVE LOOP ACTIVE</span>
+                    </div>
+                </div>
+
+                <div class="signal-diagram">
+                    <!-- Step 1: Sensor -->
+                    <div class="diagram-node" id="node-sensor">
+                        <div class="node-icon">01</div>
+                        <div class="node-content">
+                            <div class="node-title">SENSOR INGESTION</div>
+                            <div class="node-desc">Resistivity, AQI (PM2.5), DHT22, LDR optical level</div>
+                        </div>
+                    </div>
+
+                    <div class="node-connector">
+                        <div class="connector-line">
+                            <div class="connector-pulse"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Controller -->
+                    <div class="diagram-node" id="node-mcu">
+                        <div class="node-icon">02</div>
+                        <div class="node-content">
+                            <div class="node-title">MCU PROCESSING (ESP32 / ESP8266)</div>
+                            <div class="node-desc">Real-time ADC sampling, hysteresis filtering & control state machine</div>
+                        </div>
+                    </div>
+
+                    <div class="node-connector">
+                        <div class="connector-line">
+                            <div class="connector-pulse"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Control Logic -->
+                    <div class="diagram-node" id="node-control">
+                        <div class="node-icon">03</div>
+                        <div class="node-content">
+                            <div class="node-title">DECISION & CONTROL LOGIC</div>
+                            <div class="node-desc">Threshold comparison, dry-run safety lockouts, timing triggers</div>
+                        </div>
+                    </div>
+
+                    <div class="node-connector">
+                        <div class="connector-line">
+                            <div class="connector-pulse"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Actuator -->
+                    <div class="diagram-node" id="node-actuator">
+                        <div class="node-icon">04</div>
+                        <div class="node-content">
+                            <div class="node-title">PHYSICAL ACTUATION</div>
+                            <div class="node-desc">Relay switching, air pumps, motor contactors, high-voltage ionizer</div>
+                        </div>
+                    </div>
+
+                    <div class="node-connector">
+                        <div class="connector-line">
+                            <div class="connector-pulse"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Dashboard -->
+                    <div class="diagram-node" id="node-twin">
+                        <div class="node-icon">05</div>
+                        <div class="node-content">
+                            <div class="node-title">DIGITAL TWIN DASHBOARD</div>
+                            <div class="node-desc">ESP-hosted web server, WebSocket telemetry & 3D visual monitoring</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SELECTED PROJECTS SECTION -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <span class="section-num">01 // FLAGSHIP PROJECTS & DIGITAL TWINS</span>
+            <h2 class="section-title">SELECTED PROJECTS</h2>
+            <p class="section-subtitle">Flagship systems built with real-time sensing, actuation, and interactive digital twins.</p>
+
+            <div class="projects-grid">
+
+                <!-- PROJECT 1: AIR PURIFIER -->
+                <article class="project-card-editorial">
+                    <div class="project-info">
+                        <div class="project-meta-header">
+                            <span class="project-num">01 — AIR PURIFIER & DIGITAL TWIN</span>
+                            <span class="tech-badge">ESP32</span>
+                        </div>
+                        <h3 class="project-title">Modular IoT Air Purifier & Digital Twin</h3>
+                        <p class="project-description">
+                            An ESP32-based air purification and monitoring system that senses particulate matter and climate metrics in real-time, executing hysteresis-based filtration and ionizer control paired with an ESP32-hosted live Web Digital Twin dashboard.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-badge">ESP32</span>
+                            <span class="tech-badge">AQI SENSOR</span>
+                            <span class="tech-badge">TEMPERATURE</span>
+                            <span class="tech-badge">HUMIDITY</span>
+                            <span class="tech-badge">RELAY CONTROL</span>
+                            <span class="tech-badge">ESP32 DIGITAL TWIN</span>
+                        </div>
+                        <a href="projects/air-purifier.html" class="project-link">
+                            VIEW PROJECT & DIGITAL TWIN <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="project-media">
+                        <!-- REUSABLE IMAGE PLACEHOLDER COMPONENT -->
+                        <div class="image-placeholder-container">
+                            <span class="placeholder-badge">PROTOTYPE IMAGE</span>
+                            <img src="assets/images/air-purifier-prototype.jpg" alt="Air Purifier Hardware Prototype" loading="lazy">
+                            <div class="placeholder-fallback">
+                                <div class="placeholder-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                        <polyline points="21 15 16 10 5 21"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="placeholder-title">AIR PURIFIER HARDWARE & DIGITAL TWIN</div>
+                                <div class="placeholder-path">assets/images/air-purifier-prototype.jpg</div>
+                            </div>
+                            <div class="placeholder-caption">FIG 1.1: ESP32 Core Controller with Dual Relays & Live Digital Twin Dashboard</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2: FUELGUARD -->
+                <article class="project-card-editorial">
+                    <div class="project-info">
+                        <div class="project-meta-header">
+                            <span class="project-num">02 — FUELGUARD & DIGITAL TWIN</span>
+                            <span class="tech-badge">ESP8266</span>
+                        </div>
+                        <h3 class="project-title">FuelGuard Ethanol Separation Detector</h3>
+                        <p class="project-description">
+                            An embedded sensing and automated removal system designed to detect phase separation in petrol. Utilizes custom electrode resistivity probes paired with optical LDR light transmission and an ESP8266 NodeMCU Digital Twin.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-badge">ESP8266</span>
+                            <span class="tech-badge">RESISTIVITY SENSOR</span>
+                            <span class="tech-badge">OPTICAL LDR</span>
+                            <span class="tech-badge">AUTOMATED PUMP</span>
+                            <span class="tech-badge">ESP8266 DIGITAL TWIN</span>
+                        </div>
+                        <a href="projects/fuelguard.html" class="project-link">
+                            VIEW PROJECT & DIGITAL TWIN <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="project-media">
+                        <!-- REUSABLE IMAGE PLACEHOLDER COMPONENT -->
+                        <div class="image-placeholder-container">
+                            <span class="placeholder-badge">PROTOTYPE IMAGE</span>
+                            <img src="assets/images/fuelguard-hardware.jpg" alt="FuelGuard Hardware Prototype" loading="lazy">
+                            <div class="placeholder-fallback">
+                                <div class="placeholder-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                        <polyline points="21 15 16 10 5 21"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="placeholder-title">FUELGUARD HARDWARE & DIGITAL TWIN</div>
+                                <div class="placeholder-path">assets/images/fuelguard-hardware.jpg</div>
+                            </div>
+                            <div class="placeholder-caption">FIG 2.1: Custom Electrode Sensor Probe Array & NodeMCU Digital Twin</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 3: GREENBORE AI -->
+                <article class="project-card-editorial">
+                    <div class="project-info">
+                        <div class="project-meta-header">
+                            <span class="project-num">03 — GREENBORE AI 3D DIGITAL TWIN</span>
+                            <span class="tech-badge">RAG & 3D TWIN</span>
+                        </div>
+                        <h3 class="project-title">GreenBore AI Subsurface Exploration Platform</h3>
+                        <p class="project-description">
+                            A full-stack AI engineering platform and 3D subsurface digital twin for analyzing deep well-log data and generating explainable drilling recommendations. Features multi-track petrophysical log viewers, ML model catalogs (RandomForest/XGBoost), and a PostgreSQL/Gemini RAG decision co-pilot.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tech-badge">3D DIGITAL TWIN</span>
+                            <span class="tech-badge">REACT THREE FIBER</span>
+                            <span class="tech-badge">FASTAPI</span>
+                            <span class="tech-badge">PGVECTOR</span>
+                            <span class="tech-badge">XGBOOST</span>
+                            <span class="tech-badge">RAG CO-PILOT</span>
+                        </div>
+                        <a href="projects/greenbore.html" class="project-link">
+                            VIEW PROJECT & 3D DIGITAL TWIN <span class="arrow">→</span>
+                        </a>
+                    </div>
+                    <div class="project-media">
+                        <!-- REUSABLE IMAGE PLACEHOLDER COMPONENT -->
+                        <div class="image-placeholder-container">
+                            <span class="placeholder-badge">3D TWIN IMAGE</span>
+                            <img src="assets/images/greenbore-hardware.jpg" alt="GreenBore AI 3D Subsurface Digital Twin" loading="lazy">
+                            <div class="placeholder-fallback">
+                                <div class="placeholder-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                        <polyline points="21 15 16 10 5 21"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="placeholder-title">GREENBORE AI 3D SUBSURFACE DIGITAL TWIN</div>
+                                <div class="placeholder-path">assets/images/greenbore-hardware.jpg</div>
+                            </div>
+                            <div class="placeholder-caption">FIG 3.1: Interactive 3D Subsurface Strata Visualization & Well-Log Telemetry</div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CAPABILITIES SECTION ("WHAT I BUILD") -->
+    <section class="capabilities-section" id="capabilities">
+        <div class="container">
+            <span class="section-num">02 // DOMAIN EXPERTISE</span>
+            <h2 class="section-title">WHAT I BUILD</h2>
+            <p class="section-subtitle">Engineering capabilities from physical circuit design to embedded firmware and digital twins.</p>
+
+            <div class="capabilities-grid">
+                
+                <div class="capability-card">
+                    <div class="capability-header">
+                        <div class="capability-icon-box">01</div>
+                        <h3 class="capability-title">Embedded Systems</h3>
+                    </div>
+                    <p class="capability-desc">
+                        ESP32, ESP8266, ESP32-C3, and microcontroller firmware development with real-time sensor sampling and memory optimization.
+                    </p>
+                </div>
+
+                <div class="capability-card">
+                    <div class="capability-header">
+                        <div class="capability-icon-box">02</div>
+                        <h3 class="capability-title">Electronics & PCBs</h3>
+                    </div>
+                    <p class="capability-desc">
+                        Sensor interfacing, transistor switching networks, relay drivers, 555 timer ICs, and custom hand-soldered prototype PCBs.
+                    </p>
+                </div>
+
+                <div class="capability-card">
+                    <div class="capability-header">
+                        <div class="capability-icon-box">03</div>
+                        <h3 class="capability-title">IoT & Connectivity</h3>
+                    </div>
+                    <p class="capability-desc">
+                        Embedded WebSockets/HTTP web servers hosted directly on MCUs, telemetry logging, and local network control APIs.
+                    </p>
+                </div>
+
+                <div class="capability-card">
+                    <div class="capability-header">
+                        <div class="capability-icon-box">04</div>
+                        <h3 class="capability-title">Control Systems</h3>
+                    </div>
+                    <p class="capability-desc">
+                        Closed-loop automation, hysteresis control logic, timing state machines, safety cutoffs, and mechanical actuation.
+                    </p>
+                </div>
+
+                <div class="capability-card">
+                    <div class="capability-header">
+                        <div class="capability-icon-box">05</div>
+                        <h3 class="capability-title">Custom Sensing</h3>
+                    </div>
+                    <p class="capability-desc">
+                        Multi-modal sensing setups including custom liquid electrode resistivity probes, LDR optical arrays, and particulate meters.
+                    </p>
+                </div>
+
+                <div class="capability-card">
+                    <div class="capability-header">
+                        <div class="capability-icon-box">06</div>
+                        <h3 class="capability-title">Digital Twins</h3>
+                    </div>
+                    <p class="capability-desc">
+                        Real-time Web UI and 3D WebGL Digital Twins reflecting physical device telemetry, petrophysical strata, relay states, and bidirectional controls.
+                    </p>
+                </div>
+
+                <div class="capability-card">
+                    <div class="capability-header">
+                        <div class="capability-icon-box">07</div>
+                        <h3 class="capability-title">Hardware Prototyping</h3>
+                    </div>
+                    <p class="capability-desc">
+                        Rapid physical assembly, acrylic housing fabrication, pneumatic fluid routing, and bench testing under field conditions.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- OTHER BUILDS SECTION -->
+    <section class="other-builds-section" id="other-builds">
+        <div class="container">
+            <span class="section-num">03 // DISCRETE ELECTRONICS & AUTOMATION</span>
+            <h2 class="section-title">OTHER BUILDS</h2>
+            <p class="section-subtitle">Practical hardware projects and automated control circuits.</p>
+
+            <div class="other-builds-grid">
+
+                <div class="build-card">
+                    <div>
+                        <span class="mono-tag" style="color: var(--accent-teal-dark); margin-bottom: 0.5rem; display: block;">PROJECT // 04</span>
+                        <h3 class="build-title">Home Automation Module</h3>
+                        <p class="build-desc">
+                            ESP32-C3-based compact home automation controller utilizing a 4-channel optocoupler relay module for controlling AC mains appliances with web interface.
+                        </p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tech-badge">ESP32-C3</span>
+                        <span class="tech-badge">4-CHANNEL RELAY</span>
+                        <span class="tech-badge">IoT</span>
+                        <span class="tech-badge">HOME AUTOMATION</span>
+                    </div>
+                </div>
+
+                <div class="build-card">
+                    <div>
+                        <span class="mono-tag" style="color: var(--accent-teal-dark); margin-bottom: 0.5rem; display: block;">PROJECT // 05</span>
+                        <h3 class="build-title">Water Tank Overflow Prevention</h3>
+                        <p class="build-desc">
+                            Hardware-first automatic overhead water tank overflow cut-off controller built using a 555 timer IC, BC547 transistor logic, and a hand-soldered custom PCB.
+                        </p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tech-badge">555 TIMER</span>
+                        <span class="tech-badge">TRANSISTOR</span>
+                        <span class="tech-badge">CUSTOM PCB</span>
+                        <span class="tech-badge">AUTOMATION</span>
+                    </div>
+                </div>
+
+                <div class="build-card">
+                    <div>
+                        <span class="mono-tag" style="color: var(--accent-teal-dark); margin-bottom: 0.5rem; display: block;">PROJECT // 06</span>
+                        <h3 class="build-title">EV Charging Smart Timer</h3>
+                        <p class="build-desc">
+                            An electric vehicle charging smart timer controller designed to automate and enforce controlled charging periods, preventing overcharging and peak-load draw.
+                        </p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tech-badge">EV</span>
+                        <span class="tech-badge">CHARGING</span>
+                        <span class="tech-badge">TIMER</span>
+                        <span class="tech-badge">CONTROL SYSTEM</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & ENGINEERING PHILOSOPHY -->
+    <section class="philosophy-section" id="about">
+        <div class="container">
+            <div class="philosophy-grid">
+                <div>
+                    <span class="section-num">04 // ABOUT & METHODOLOGY</span>
+                    <h2 class="philosophy-title-large">
+                        FROM SENSOR<br>TO SYSTEM.
+                    </h2>
+                    <p class="philosophy-text">
+                        I am an Electronics & Communication Engineering student interested in building physical systems that combine electronics, embedded software, sensing, automation, and interactive digital twins.
+                    </p>
+                    <p class="philosophy-text">
+                        Instead of treating hardware or software in isolation, I design end-to-end systems where sensor physics, discrete circuitry, microcontroller logic, machine learning, and digital twins operate together as a cohesive entity.
+                    </p>
+                </div>
+
+                <div class="flow-diagram-box">
+                    <span class="flow-diagram-title">SYSTEM ARCHITECTURE PIPELINE</span>
+                    
+                    <div class="flow-steps">
+                        <div class="flow-line-bg"></div>
+                        
+                        <div class="flow-step">
+                            <div class="flow-circle">01</div>
+                            <span class="flow-label">SENSE</span>
+                        </div>
+
+                        <div class="flow-step">
+                            <div class="flow-circle">02</div>
+                            <span class="flow-label">PROCESS</span>
+                        </div>
+
+                        <div class="flow-step">
+                            <div class="flow-circle">03</div>
+                            <span class="flow-label">DECIDE</span>
+                        </div>
+
+                        <div class="flow-step">
+                            <div class="flow-circle">04</div>
+                            <span class="flow-label">ACT</span>
+                        </div>
+
+                        <div class="flow-step">
+                            <div class="flow-circle">05</div>
+                            <span class="flow-label">VISUALIZE</span>
+                        </div>
+                    </div>
+
+                    <div class="philosophy-quote-box">
+                        "I like building systems where the electronics, firmware, physical mechanism, and digital twin interface work together as one system."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-box">
+                <span class="section-num">05 // COLLABORATION</span>
+                <h2 class="contact-headline">LET’S BUILD SOMETHING PHYSICAL.</h2>
+                <p class="contact-text">
+                    Interested in embedded systems, electronics, automation, or hardware projects?
+                </p>
+
+                <div class="contact-links">
+                    <a href="mailto:zayyan.shaikh@example.com" class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>EMAIL PLACEHOLDER</span>
+                    </a>
+
+                    <a href="https://linkedin.com/in/zayyan-shaikh" target="_blank" rel="noopener" class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span>LINKEDIN PLACEHOLDER</span>
+                    </a>
+
+                    <a href="https://github.com/zayyan-shaikh" target="_blank" rel="noopener" class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        <span>GITHUB PLACEHOLDER</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                ZAYYAN SHAIKH <span>• Embedded Systems • Electronics • Digital Twins</span>
+            </div>
+            <div class="footer-copy">
+                © 2026 Zayyan Shaikh. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
